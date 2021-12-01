@@ -9,5 +9,5 @@ sha256sums=('SKIP')
 fileloc=/usr/bin
 package() {
  sudo cp ./maim-sh ${fileloc}
- chmod +X ${fileloc}/maim-sh
+ chmod +x ${fileloc}/maim-sh
 }

@@ -6,8 +6,6 @@ arch=(any)
 depends=("maim" "xdotool" "xclip")
 source=('maim-sh')
 sha256sums=('SKIP')
-fileloc=/usr/bin
 package() {
- sudo cp ./maim-sh ${fileloc}
- chmod +x ${fileloc}/maim-sh
+ install -Dm755 "./maim-sh" "$pkgdir/usr/bin/maim-sh"
 }
